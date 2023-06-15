@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Righteous&display=swap');
+/*font-family: 'Quicksand', sans-serif;
+font-family: 'Righteous', cursive;*/
+
+/*----COLORS----
+Dark Brown #524952
+Light Yellow #FFF8E0
+Pink-Off-White #FFFAFF
+Light green-blue #E0FFFA
+Dark green-blue #48B0A1
+----*/
+html{
+    height: 100%;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    color: #524952;
+    background-color: #FFFAFF;
+    height: 100%;
+}
+body h2{
+    font-size: 1.7em;
+}
+body h3{
+    font-size: 1.3em;
+}
+header{
+    background-color: #48B0A1;
+    color: #FFFAFF;
+    padding: 0.5em;
+    margin: 0;
+    width: 100%;
+}
+footer{
+    background-color: #524952;
+    color: #FFFAFF;
+    text-align: center;
+    padding: 0.01em;
+    width: 100%;
+}
+.header-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    max-width: 100%;
+}
+.header-container a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #FFFAFF;
+    padding: 1em;
+    float: right;
+    
+}
+.header-container a:hover{
+    color: #524952;
+}
+.logo{
+    font-family: 'Righteous', cursive;
+    font-size: 5em;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 1em;
+}
+/*-----HOME------*/
+.about-content{
+    margin: 5em;
+}
+.course-container{
+    margin: 5em;
+}
+.course-quarter-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.course-quarter-content{
+    gap: 1em;
+    border: 1px solid #E0FFFA;
+    border-radius: 12px;
+    padding: 1em;
+    box-shadow: 0 0 8px #524952;
+    margin: 1.5em;
+}
+.course-quarter-content h3{
+    text-align: center;
+}
+.course-quarter-content li{
+    padding: 0.5em;
+    list-style: none;
+}
+.skills-container{
+    margin: 5em; 
+}
+.skills-card-content h3{
+    text-align: center;
+}
+.skills-card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.skills-card-content{
+    gap: 1em;
+    border: 1px solid #E0FFFA;
+    border-radius: 12px;
+    padding: 1em;
+    box-shadow: 0 0 8px #524952;
+    margin: 2em;
+}
+/*-----PROJECTS------*/
+.projects-main{
+    margin: 5em;
+}
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
+.projects-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2em;
+    max-width: 100%;
+    border: 1px solid #E0FFFA;
+    border-radius: 12px;
+    padding: 1em;
+    box-shadow: 0 0 8px #524952;
+    margin: 1em;
+}
+.projects-content h3{
+    text-align: left;
+}
+.projects-content p{
+    text-align: justify;
+}
+.projects-content img{
+    max-width: 90%;
+    padding: 1em;
+    text-align: center;
+}
+/*---CONTACT----*/
+.contact-body{
+    position: relative;
+}
+.contact-footer{
+    position: absolute;
+    bottom: 0;
+}
+.contact-container{
+    margin: 5em;
+    max-height: 100%;
+}
+.contact-form{
+    padding: 1em;
+    margin: 1em;
+    align-items: center;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea{
+    width: 100%;
+    padding: 1em;
+    margin: 0.5em;
+    border-radius: 12px;
+    font-family: 'Quicksand', sans-serif;
+    color:#524952;
+    font-size: 1em;
+
+}
+.contact-form button{
+    border-radius: 12px;
+    padding: 1em;
+    margin: 1em;
+    margin-left: 5em;
+    text-align: center;
+    background-color: #48B0A1;
+    color:#FFFAFF;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+}
+.contact-form button:hover{
+    background-color: #524952;
+}
+/*-----MEDIA QUERIES----*/
+@media only screen and (max-width: 600px){
+    /* header{
+        background-color: red;
+    } */
+    .header-container{
+        grid-template-columns: 1fr 5fr;
+    }
+    .header-container a{
+    font-size: 1em;
+    padding: 0.5em;
+}
+    .logo{
+        font-size: 3em;
+        margin-left: 0.3em;
+    }
+    /*------HOME-----*/
+    .about-content{
+        margin: 1em;
+    }
+    .course-container{
+        margin: 1em;
+    }
+    .course-quarter-container{
+        grid-template-columns: 1fr;
+        
+    }
+    .course-quarter-content{
+    gap: 0.75em;
+    padding: 0.5em;
+    margin: 0.5em;
+    }
+    .skills-card-container{
+        grid-template-columns: 1fr;
+    }
+    .skills-container{
+        margin: 1em;
+    }
+    .skills-card-content{
+        padding: 0.5em;
+        margin: 0.5em;
+    }
+    /*------PROJECTS-----*/
+    .projects-main{
+        margin: 1em;
+    }
+    .projects-container{
+        grid-template-columns: 1fr;
+    }
+    .projects-content{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    /*------CONTACT-----*/
+    .contact-container{
+    margin: 1em;
+}
+}
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    /* header{
+        background-color: green;
+    } */
+    .header-container{
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: auto;
+        max-width: 100;
+    } 
+    .logo{
+        font-size: 4em;
+        margin-left: 0.5em;
+    }
+    /*------HOME-----*/
+    .about-content{
+        margin: 2em;
+    }
+    .course-container{
+        margin: 2em;
+    }
+    .course-quarter-container{
+        grid-template-columns: 1fr;
+        
+    }
+    .course-quarter-content{
+    gap: 0.75em;
+    padding: 0.5em;
+    margin: 0.5em;
+    }
+    .skills-card-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .skills-container{
+        margin: 2em;
+    }
+    .skills-card-content{
+        padding: 0.60em;
+        margin: 0.60em;
+    }
+    /*-----PROJECTS------*/
+    .projects-main{
+        margin: 2em;
+    }
+    .projects-container{
+        grid-template-columns: 1fr;
+    }
+    .projects-content{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    /*------CONTACT-----*/
+    .contact-container{
+    margin: 2em;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    /* header{
+        background-color: orange;
+    } */
+    /*------HOME-----*/
+    .about-content{
+        margin: 2em;
+    }
+    .course-container{
+        margin: 2em;
+    }
+    .course-quarter-container{
+        grid-template-columns: 1fr 1fr 1fr;        
+    }
+    .course-quarter-content{
+    gap: 0.75em;
+    padding: 0.5em;
+    margin: 0.5em;
+    }
+    .skills-container{
+        margin: 2em;
+    }
+    .skills-card-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .skills-card-content{
+        padding: 0.60em;
+        margin: 0.60em;
+    }
+    /*-----PROJECTS------*/
+    .projects-main{
+        margin: 2em;
+    }
+    .projects-container{
+        grid-template-columns: 1fr;
+    }
+    .projects-content{
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto;
+    }
+    /*------CONTACT-----*/
+    .contact-container{
+    margin: 2em;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    /*------HOME-----*/
+    .about-content{
+        margin: 3.5em;
+    }
+    .course-container{
+        margin: 3.5em;
+    }
+    .course-quarter-content{
+        padding: 0.75em;
+        margin: 0.75em;
+    }
+    .skills-container{
+        margin: 3.5em;
+    }
+    .skills-card-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .skills-card-content{
+        padding: 0.75em;
+        margin: 0.75em;
+    }
+    /*-----PROJECTS------*/
+    .projects-main{
+        margin: 3.5em;
+    }
+    .projects-container{
+        grid-template-columns: 1fr;
+    }
+    .projects-content{
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto;
+    }
+    /*------CONTACT-----*/
+    .contact-container{
+    margin: 3.5em;
+    }
+}
+@media only screen and (min-width: 1200px){
+
+}
